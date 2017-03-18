@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <title>列表页</title>
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/common.css">
+    <script src="assets/js/jquery-2.1.1.min.js"></script>
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="assets/bootstrap/js/html5shiv.min.js"></script>
+      <script src="assets/bootstrap/js/respond.min.js"></script>
+    <![endif]-->
+    <style>
+    ul.nav-tabs {
+        width: 140px;
+        margin-top: 20px;
+        border-radius: 4px;
+        border: 1px solid #ddd;
+        box-shadow: 0 1px 4px rgba(0, 0, 0, 0.067);
+    }
+    
+    ul.nav-tabs li {
+        margin: 0;
+        border-top: 1px solid #ddd;
+    }
+    
+    ul.nav-tabs li:first-child {
+        border-top: none;
+    }
+    
+    ul.nav-tabs li a {
+        margin: 0;
+        padding: 8px 16px;
+        border-radius: 0;
+    }
+    
+    #body_a {
+        color: #337ab7;
+    }
+    
+    ul.nav-tabs li.active a:hover {
+        color: #337ab7;
+        border: 1px solid #0088cc;
+    }
+    
+    ul.nav-tabs li:first-child a {
+        border-radius: 4px 4px 0 0;
+    }
+    
+    ul.nav-tabs li:last-child a {
+        border-radius: 0 0 4px 4px;
+    }
+    
+    ul.nav-tabs.affix {
+        top: 30px;
+    }
+    </style>
+    <script>
+    $(document).ready(function() {
+        $("#myNav").affix({
+            offset: {
+                top: 125
+            }
+        });
+    });
+    </script>
+</head>
+
+<body data-spy="scroll" data-target="#myScrollspy">
+    <!-- 导航条 -->
+    <nav class="navbar navbar-default">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="container-fluid">
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                                <span class="sr-only">Toggle navigation</span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                            <a class="navbar-brand" href="#"><img src="assets/images/logo.png" alt=""></a>
+                        </div>
+                        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                            <ul class="nav navbar-nav navbar-right">
+                                <li role="presentation"><a href="index.html"><span class="glyphicon glyphicon-home" aria-hidden="true"></span>&nbsp;首页</a></li>
+                                <li role="presentation"><a href="list.html"><span class="glyphicon glyphicon-th-list" aria-hidden="true"></span>&nbsp;资讯</a></li>
+                                <li role="presentation"><a href="case.html"><span class="glyphicon glyphicon-fire" aria-hidden="true"></span>&nbsp;案例</a></li>
+                                <li role="presentation" class="active"><a href="about.html"><span class="glyphicon glyphicon-question-sign" aria-hidden="true"></span>&nbsp;关于</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- banner -->
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12 bg_Img">
+                <div class="container">
+                    <h2>关于</h2>
+                    <p>本机构的成长介绍。。。</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 主体内容 -->
+    <div class="container-fluid bgC_body">
+        <div class="container mg_t45 mg_b20">
+            <div class="row">
+                <div class="col-md-3 hidden-xs hidden-sm" id="myScrollspy">
+                    <ul class="nav nav-tabs nav-stacked bgC_wh" id="myNav">
+                        <li class="active"><a href="#section-1" id="body_a">1、机构介绍</a></li>
+                        <li><a href="#section-2" id="body_a">2、加入我们</a></li>
+                        <li><a href="#section-3" id="body_a">3、联系方式</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-9 bgC_wh">
+                    <h2 id="section-1" class="pad_t20">机构简介</h2>
+                    <p>掌职网——中国大学生职业人才孵化器，长期专注于大学生职业人才孵化和企业校园招聘综合服务。掌职网依托校孵化基地和优质企业、导师、课程体系资源，根据企业个性化需求定制大学生“专业技能+职业通用能力+职场体验”三位一体的企业人才孵化方案和项。提升大学生就业竞争力，实现高校人才培养和企业岗位需求精准匹配。平台开设以下服务：人才需求孵化：由企业发布招聘信息与上岗需求，由平台进行需求拆解，并制定出合理的方案将学生孵化为与岗位匹配的职业人才。课程培训：我们有众多导师贡献的精品课程，也有平台专门设计的能力模块，针对各方需求，我们还能额外定制，总有你需要的。就业推荐：职业不仅讲究高薪，更讲究匹配。我们可以根据每个人的职业特点，为每个人推荐最合适的岗位。</p>
+                    <hr>
+                    <h2 id="section-2">加入我们</h2>
+                    <p>掌职网，是公司倾力打造的在线实用技能学习平台，该平台于2012年12月底正式上线，主要为学习者提供海量、优质的课程，课程结构严谨，用户可以根据自身的学习程度，自主安排学习进度。掌职网的宗旨是，为每一位想真真正正学到些实用知识、技能的学习者，提供贴心的一站式学习服务。以下是各个空缺岗位具体职责与要求，有意者请详阅，并发简历、相应作品及个人阐述至： jobs@erwe.com</p>
+                    <hr>
+                    <h2 id="section-3">联系方式</h2>
+                    <p>地址：江苏省南京市</p>
+                    <p>邮编：1234567</p>
+                    <p>电话：010-88888888</p>
+                    <p>传真：010-88888888</p>
+                    <hr>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 底部 -->
+    <div class="container-fluid bgC_blac">
+        <div class="row">
+            <div class="col-md-12">
+                <p class="mg_t20"><a href="#">企业培训</a>|<a href="#">合作事宜</a>|<a href="#">版权投诉</a></p>
+                <p class="mg_b20">苏ICP 备12345678. &#169;2009-2017 掌职网企讯网. Powered by Bootstrap</p>
+            </div>
+        </div>
+    </div>
+    <!-- js资源放到尾部 -->
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/js.js"></script>
+</body>
+
+</html>

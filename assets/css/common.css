@@ -1,0 +1,151 @@
+@charset "utf-8";
+/* 通用样式 */
+.mg_t45{
+	margin-top: 45px;
+}
+.mg_t20{
+	margin-top: 20px;
+}
+.mg_b20{
+	margin-bottom: 20px;
+}
+.mg_b22{
+	margin-bottom: 20px;
+	color:#666;
+}
+.mg_b40{
+	margin-bottom: 40px;
+}
+.mg_r20{
+	margin-right: 20px;
+}
+.pad_t20{
+	padding-top: 20px;
+}
+.color_fff{
+	color:#999;
+}
+.bgC_fff{
+	background-color: #ccc;
+}
+.text_align01{
+	text-align: center;
+	margin:70px auto;
+}
+.text_align02 h3{
+	text-align: center;
+	margin-top: 150px;
+	font-size: 30px;
+	color:#666868;
+}
+.text_align02 p{
+	text-align: center;
+	font-size: 21px;
+	color:#666868;
+	margin-top: 18px;
+	margin-bottom: 70px;
+}
+.bgC_blac{
+	background-color: #666666;
+	color:white;
+	text-align: center;
+}
+.bg_Img{
+	background: url(../images/bg.jpg);
+}
+.bgC_body{
+	background-color: #eee;
+}
+.bgC_wh{
+	background-color: white;
+}
+a{
+	color: white;
+}
+.mg_auto{
+	margin:0 auto;
+}
+.text_al{
+	text-align: center;
+}
+.bgC_eee{
+	background-color: #eeeeee;
+}
+/* 导航条 */
+.navbar-default {
+	border:none;
+	background-color: white;
+	margin-bottom: 0;
+}
+.navbar-default .container .row .col-md-12 .container-fluid .navbar-header a{
+	padding-top: 0;
+}
+/* 轮播图 */
+.center_img{
+	margin:0 auto;
+}
+.col01{
+	background: #223240;
+}
+.col02{
+	background: #F5E4DC;
+}
+.col03{
+	background: #DD282D;
+}
+/* 选择主体内容 */
+.container .row .col-md-12 h3{
+	text-align: center;
+	color:#0059b2;
+}
+.container .row .col-md-12 p{
+	text-align: center;
+	color:#ccc;
+}
+/* 列表页 */
+.bg_Img .container{
+	padding-top: 25px;
+	padding-bottom: 25px;
+	color:white;
+	padding-left: 60px;
+}
+.border_shawdo{
+	box-shadow: 2px 2px 3px #ccc;
+}
+.border_shawdo2{
+	box-shadow: 2px 2px 3px #ccc;
+}
+.border_shawdo img{
+	padding: 25px 0 20px 8px;
+}
+.border_shawdo .col-xs-7{
+	padding: 8px 20px 0 8px;
+}
+.border_shawdo .col-xs-7 h4{
+	margin-bottom: 10px;
+}
+.border_shawdo .col-xs-7 p{
+	margin-top: 10px;
+}
+.border_shawdo2 blockquote{
+	margin-top: 20px;
+}
+/* 关于 */
+.navbar a{
+	color:blue;
+}
+/*媒体查询*/
+@media (max-width: 768px) {
+	.bg_Img h2{
+		font-size: 25px;
+	}
+	.bg_Img p{
+		font-size: 12px;
+	}
+	.mymedia h4{
+		font-size: 14px;
+	}
+	.mymedia p{
+		font-size: 12px;
+	}
+}
